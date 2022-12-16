@@ -1,0 +1,254 @@
+:root {
+  --first-title-color: #2E2F42;
+  --second-title-color: #FFFFFF;
+  --main-text-color: #434455;
+  --accent-color: #E7E9FC;
+  --background-dark-color: #2E2F42;
+  --background-ashen-color: #F4F4FD;
+  --background-basic-color: #F5F5F5;
+  --background-white-color: #ffffff;
+  --btn-color: #4D5AE5;
+  --btn-hover-color: #404BBF;
+  --filter-btn-hover-color: #4D5AE5;
+
+}
+
+body {
+  font-family: "Roboto", sans-sarif;
+  background-color: var(--background-basic-color)
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo {
+  font-family: 'Raleway', sans-sarif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Header */
+.header {
+  background-color: var(--background-white-color);
+}
+
+.header-logo {
+  color: var(--btn-color);
+}
+
+.header-part-logo {
+  color: var(--first-title-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color)
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--btn-color);
+}
+
+.contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color)
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--btn-color);
+}
+
+/* Index Hero */
+.hero {
+  background-color: var(--background-dark-color);
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color)
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--second-title-color);
+  background-color: var(--btn-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-hover-color);
+}
+
+/* Benefits */
+
+.benefits-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+/* Services */
+
+.services-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--first-title-color)
+}
+
+/* Team */
+
+.team {
+  background-color: var(--background-ashen-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--first-title-color);
+}
+
+.team-after-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--background-dark-color);
+}
+
+.footer-logo {
+  color: var(--btn-color);
+}
+
+.footer-part-logo {
+  color: var(--background-ashen-color);
+}
+
+.footer-text {
+  color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.work-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--btn-color);
+  background-color: var(--background-ashen-color);
+}
+
+.work-btn:hover,
+.work-btn:focus {
+  color: var(--second-title-color);
+  background-color: var(--filter-btn-hover-color);
+}
+
+.work-ex-item {
+  background-color: var(--background-white-color);
+}
+
+.work-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+
+}
+
+.work-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+
+}
+
+.work-ex-link:focus>.work-title {
+  color: var(--btn-color);
+}
+
+.work-ex-link:focus>.work-text {
+  color: var(--btn-color);
+}
+
+.work-ex-link:hover>.work-title {
+  color: var(--btn-color);
+}
+
+.work-ex-link:hover>.work-text {
+  color: var(--btn-color);
+}
