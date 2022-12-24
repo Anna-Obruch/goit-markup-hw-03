@@ -19,7 +19,11 @@ h5,
 h6 {
   margin: 0;
 }
-
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 img {
   display: block;
 }
@@ -32,13 +36,10 @@ body {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding-left: 0;
 }
 
 .link {
   text-decoration: none;
-  color: inherit;
 }
 
 .visually-hidden {
@@ -79,12 +80,13 @@ body {
 .text-under-img {
   padding-top: 32px;
   padding-bottom: 32px;
-  border: 1px solid var(--accent-color);
-  border-top: 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Header */
 .header {
+  background-color: var(--background-white-color);
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--accent-color);
@@ -100,18 +102,21 @@ body {
 
 .header-part-logo {
   color: var(--first-title-color);
-
+  margin-right: 76px;
 }
 
 .header-navigation {
+  display: flex;
   align-items: center;
   margin-right: auto;
-  margin-left: 76px;
 }
 
 .header-list {
   display: flex;
   gap: 40px;
+}
+
+.header-item {
 }
 
 .header-link {
@@ -121,19 +126,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--first-title-color);
 }
-.curent {
-color: var(--btn-hover-color)
-}
 
 .header-link:hover,
 .header-link:focus {
   color: var(--btn-color);
 }
 
+.contact {
+}
+
 .contact-list {
   display: flex;
   gap: 40px;
-  margin-left: auto;
+}
+
+.contact-item {
 }
 
 .contact-link {
@@ -181,7 +188,7 @@ color: var(--btn-hover-color)
   padding: 16px 32px;
   border-radius: 4px;
   min-width: 169px;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .hero-btn:hover,
@@ -190,10 +197,15 @@ color: var(--btn-hover-color)
 }
 
 /* Benefits */
+.benefits {
+}
 
 .benefits-list {
   display: flex;
   gap: 24px;
+}
+
+.benefits-item {
 }
 
 .benefits-title {
@@ -214,9 +226,7 @@ color: var(--btn-hover-color)
 }
 
 /* Services */
-
 .services {
-  padding-top: 0;
 }
 
 .services-title {
@@ -307,6 +317,7 @@ color: var(--btn-hover-color)
 
 /* Portfolio */
 .work {
+  background-color: var(--background-white-color);
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -315,12 +326,14 @@ color: var(--btn-hover-color)
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 72px;
+}
+
+.work-item {
 }
 
 .work-btn {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
@@ -333,6 +346,7 @@ color: var(--btn-hover-color)
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   padding: 12px 24px;
+  margin-bottom: 72px;
 }
 
 .work-btn:hover,
@@ -349,12 +363,16 @@ color: var(--btn-hover-color)
 }
 
 .work-ex-item {
+  background-color: var(--background-white-color);
   width: calc((100% - 48px) / 3);
 }
 
+.work-ex-link {
+}
+
 .product-descr {
-  padding-left: 16px;
-  
+  border: 1px solid var(--accent-color);
+  border-top: 1px solid transparent;
 }
 .work-title {
   font-weight: 700;
